@@ -1,0 +1,39 @@
+{
+  "domainId" : "761d2231-dcb4-4921-ac74-49a4eb7bb7ea",
+  "computeSpec" : {
+    "clusterSpecs" : [ {
+      "name" : "Cluster1",
+      "hostSpecs" : [ {
+        "id" : "8fdb3f46-ef65-46d8-8be3-e9ab484f79ca"
+      } ],
+      "datastoreSpec" : {
+        "vsanDatastoreSpec" : {
+          "failuresToTolerate" : 1,
+          "licenseKey" : "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX",
+          "datastoreName" : "vSanDatastore"
+        }
+      },
+      "networkSpec" : {
+        "vdsSpecs" : [ {
+          "name" : "vRack-DSwitch",
+          "portGroupSpecs" : [ {
+            "name" : "SDDC-DPortGroup-Mgmt",
+            "transportType" : "MANAGEMENT"
+          }, {
+            "name" : "SDDC-DPortGroup-VSAN",
+            "transportType" : "VSAN"
+          }, {
+            "name" : "SDDC-DPortGroup-vMotion",
+            "transportType" : "VMOTION"
+          } ]
+        } ],
+        "nsxClusterSpec" : {
+          "nsxVClusterSpec" : {
+            "vlanId" : 0,
+            "vdsNameForVxlanConfig" : "vds_name"
+          }
+        }
+      }
+    } ]
+  }
+}
