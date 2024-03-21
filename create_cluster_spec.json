@@ -10,7 +10,10 @@
         "vsanDatastoreSpec" : {
           "failuresToTolerate" : 1,
           "licenseKey" : "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX",
-          "datastoreName" : "vSanDatastore"
+          "datastoreName" : "vSanDatastore",
+          "esaConfig": {
+            "enabled": false
+          }
         }
       },
       "networkSpec" : {

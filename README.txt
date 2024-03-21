@@ -84,7 +84,7 @@ Network Details
 
 	->For each VDS
 
-	->Port group names and the corresponding transport type. Note that EDGE_INFRA_OVERLAY_UPLINK should not be specified in the input spec.
+	->Port group names and the corresponding transport type. Note that EDGE_INFRA_OVERLAY_UPLINK, VREALIZE should not be specified in the input spec.
 
 	->DVS host Infrastructure traffic resource type
 
